@@ -4,22 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My weather app project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>Welcome to my weather app</h1>
-    <footer>
-      Coded by
-      <a href="https://github.com/mariefish999" target="blank">Marie Fisher </a>
-      is open-sourced on
-      <a
-        href="https://github.com/mariefish999/my-weather-app-project"
-        target="blank"
-        >Github</a
-      >
-      and hosted on
-      <a href="https://my-weather-app-project-mf.netlify.app/" target="blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Thursday 14:17, clear sky
+            <br />
+            Humidity: <strong>39%</strong>, Wind: <strong>3.15km/h</strong>
+          </p>
+        </div>
+        <div class="weather-app-container">
+            <div class="weather-app-icon">⛅</div>
+            <div class="weather-app-temperature-value">12</div>
+            <div class="weather-app-unit">oC</div>
+            </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/mariefish999" target="blank"
+          >Marie Fisher
+        </a>
+        is open-sourced on
+        <a
+          href="https://github.com/mariefish999/my-weather-app-project"
+          target="blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://my-weather-app-project-mf.netlify.app/" target="blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
